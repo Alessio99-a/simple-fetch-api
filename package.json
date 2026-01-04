@@ -1,5 +1,5 @@
 {
-  "name": "fetch-api",
+  "name": "simple-fetch-api",
   "version": "1.0.0",
   "description": "A simple TypeScript fetch wrapper with typed responses and error handling",
   "main": "dist/index.cjs",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alessio99-a/fetch-api"
+    "url": "https://github.com/Alessio99-a/simple-fetch-api.git"
   },
   "devDependencies": {
     "tsup": "^8.5.1",
