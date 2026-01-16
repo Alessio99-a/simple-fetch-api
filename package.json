@@ -1,0 +1,31 @@
+{
+  "name": "simple-fetch-api",
+  "version": "1.0.0",
+  "description": "A simple TypeScript fetch wrapper with typed responses and error handling",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rm -rf dist",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "fetch",
+    "typescript",
+    "api",
+    "http",
+    "network"
+  ],
+  "author": "Alessio Galtelli <alessiogaltelli@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alessio99-a/simple-fetch-api.git"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
