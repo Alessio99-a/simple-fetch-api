@@ -48,7 +48,8 @@ async function fetchCore(options, internalSignal) {
         ...responseType === "json" && { "Content-Type": "application/json" },
         ...headers
       },
-      signal: internalSignal
+      signal: internalSignal,
+      ...options.next && { next: options.next }
     };
     if (body !== void 0) {
       requestInit.body = skipBodyStringify ? body : JSON.stringify(body);

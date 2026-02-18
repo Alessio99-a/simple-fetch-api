@@ -76,6 +76,10 @@ interface ApiFetchOptions {
     signal?: AbortSignal;
     /** Skip automatic JSON stringification of body */
     skipBodyStringify?: boolean;
+    /** Next cache option */
+    next?: {
+        revalidate?: number | boolean;
+    };
 }
 /**
  * Makes a type-safe API request with error handling, timeout support, and retry logic.
