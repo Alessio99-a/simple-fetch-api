@@ -89,6 +89,8 @@ export interface ApiFetchOptions {
   signal?: AbortSignal;
   /** Skip automatic JSON stringification of body */
   skipBodyStringify?: boolean;
+
+  next?: { revalidate?: number | boolean };
 }
 
 /**
@@ -175,6 +177,7 @@ async function fetchCore<T>(
         ...headers,
       },
       signal: internalSignal,
+      ...(options.next && { next: options.next }),
     };
 
     if (body !== undefined) {
