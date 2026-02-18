@@ -1,6 +1,6 @@
 {
   "name": "simple-fetch-api",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A simple TypeScript fetch wrapper with typed responses and error handling",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
